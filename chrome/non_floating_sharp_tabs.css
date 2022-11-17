@@ -36,7 +36,11 @@ See the above repository for updates as well as full license text. */
 }
 
 #TabsToolbar .toolbarbutton-1 > .toolbarbutton-badge-stack,
-#TabsToolbar .toolbarbutton-1 > .toolbarbutton-icon{ border-radius: 2px !important;  }
+#TabsToolbar .toolbarbutton-1 > .toolbarbutton-icon{ 
+  border-radius: 3px !important;
+  margin-left: 3px !important;
+  margin-bottom: -1px !important;
+}
 
 /* tabs newtab button needs some special styling... */
 #tabs-newtab-button{ padding-inline: 0 !important; }
