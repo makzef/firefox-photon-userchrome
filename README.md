@@ -1,8 +1,9 @@
 # Restore classic Photon look on Firefox 91+ (with some extra modification)
 
-1. Enable `userChrome.css` by setting `toolkit.legacyUserProfileCustomizations.stylesheets` preference value to `true` in `about:config` (put it in address bar).
-2. Copy the `chrome` folder into your profile folder. You can easily find it by going to `about:support` address and clicking open directory near `Profile Directory` line.
-> **Optional:** Change the `browser.tabs.tabMinWidth` preference value to `76`, which is the default value on Photon.
+1. Enable `userChrome.css` by setting `toolkit.legacyUserProfileCustomizations.stylesheets` preference value to `true` in `about:config` (put it in address bar). 
+    > Skip this step if using file `user.js` from this repo (it already include necessary value for `toolkit.legacyUserProfileCustomizations.stylesheets`)
+2. Copy the `chrome` folder (also optionaly `user.js` file) into your profile folder. You can easily find it by going to `about:support` address and clicking open directory near `Profile Directory` line.
+    > **Optional:** Change the `browser.tabs.tabMinWidth` preference value to `76`, which is the default value on Photon.
 
 # Screenshots
 
@@ -27,6 +28,7 @@ This configuration modify and even disable some additional tweaks from its paren
 3. Trying to make tab close button bigger, like it was in Photon.
 4. Media (audio) button on tabs were modified, keep it above favicon (in rare cases can be glitchy and replace the favicon icon).  
 But it's not in the Photon style, which puts the mute button next to the left of close button. Because Proton changed the HTML structure of the mute button, it would be difficult to put the mute button back to the Photon position, so instead I moved the mute button to become "superscripted" to the favicon, similar to how Proton handle mute buttons on pinned tabs.
+5. File `user.js` to rewrite some configs for personal preferences, like: don't close window with last tab, load bookmarks in background, activate legacy customizations. Do not copy this file into profile folder if you don't need these preferences.
 
 # Notes
 
