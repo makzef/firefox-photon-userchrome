@@ -6,3 +6,25 @@ menupopup > menuitem, menupopup > menu {
 :root {
   --arrowpanel-menuitem-padding: 4px 8px !important;
 }
+
+/* Add some margin between icon and text in menu */
+.subviewbutton {
+  & > .toolbarbutton-icon {
+    margin-right: 5px  !important;
+  }
+}
+
+/* Change icons color in hamburger menu due to some errors */
+#appMenu-new-tab-button2 > .toolbarbutton-icon,
+#appMenu-new-window-button2 > .toolbarbutton-icon,
+#appMenu-new-private-window-button2 > .toolbarbutton-icon,
+#appMenu-bookmarks-button > .toolbarbutton-icon,
+#appMenu-history-button > .toolbarbutton-icon,
+#appMenu-downloads-button > .toolbarbutton-icon,
+#appMenu-passwords-button > .toolbarbutton-icon,
+#appMenu-extensions-themes-button > .toolbarbutton-icon,
+#appMenu-print-button2 > .toolbarbutton-icon,
+#appMenu-save-file-button2 > .toolbarbutton-icon,
+#appMenu-find-button2 > .toolbarbutton-icon {
+  filter: invert(90%);
+}
